@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Information"
+                android:textSize="48sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="173dp"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/runner2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Sex"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="-15dp"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/maleChecked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:text="male"
+                        android:textSize="23sp"
+                        android:textColor="#877373"/>
+
+                    <RadioButton
+                        android:id="@+id/femaleChecked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="female"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingRight="5dp"
+                        android:textSize="23sp"
+                        android:textColor="#877373"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Age"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputAge"
+                    android:layout_width="200dp"
+                    android:layout_height="59dp"
+
+                    android:ems="10"
+                    android:hint="20,..."
+                    android:inputType="number"
+                    android:textColor="#AEA3A3"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Weight"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputWeight"
+                    android:layout_width="200dp"
+                    android:layout_height="59dp"
+
+                    android:ems="10"
+                    android:hint="kg"
+                    android:inputType="number"
+                    android:textColor="#AEA3A3"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Height"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputHeight"
+                    android:layout_width="200dp"
+                    android:layout_height="59dp"
+
+                    android:ems="10"
+                    android:hint="cm"
+                    android:inputType="number"
+                    android:textColor="#AEA3A3"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Step length"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputStepLength"
+                    android:layout_width="200dp"
+                    android:layout_height="59dp"
+
+                    android:ems="10"
+                    android:hint="cm"
+                    android:inputType="number"
+                    android:textColor="#AEA3A3"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="114dp">
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#80DEEA"
+                    android:text="Confirm"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>
+
+

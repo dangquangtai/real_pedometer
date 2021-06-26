@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "906855570446",
+    "firebase_url": "https://realpedometer-d9ef5-default-rtdb.firebaseio.com",
+    "project_id": "realpedometer-d9ef5",
+    "storage_bucket": "realpedometer-d9ef5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906855570446:android:d57aac3a3ade4e4c6eb05f",
+        "android_client_info": {
+          "package_name": "com.taivku.pedometer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906855570446-1t9mtr7jss32c395b2rhi223554a323i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCZcj4ArBZE6QC9FE2KIX4TgLVGb6zlmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906855570446-1t9mtr7jss32c395b2rhi223554a323i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
