@@ -57,7 +57,7 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="208dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                    >
@@ -244,7 +244,7 @@
                     android:gravity="center"
                     android:text="Race "
                     android:textSize="20sp"
-                    app:backgroundTint="#FFCCBC" />
+                    app:backgroundTint="#80DEEA" />
 
             </androidx.cardview.widget.CardView>
 
