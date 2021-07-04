@@ -184,14 +184,21 @@
                                 android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
 
-                                <TextView
+<!--                                <TextView-->
+<!--                                    android:id="@+id/timeMap"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="00:00"-->
+<!--                                    android:textSize="20dp"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    />-->
+                                <Chronometer
                                     android:id="@+id/timeMap"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="00:00"
                                     android:textSize="20dp"
-                                    android:textColor="@color/black"
-                                    />
+                                    android:textColor="@color/black" />
 
                                 <TextView
                                     android:id="@+id/speedMap"
@@ -372,14 +379,21 @@
                                 android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
 
-                                <TextView
+<!--                                <TextView-->
+<!--                                    android:id="@+id/timeMap2"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="00:00"-->
+<!--                                    android:textSize="20dp"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    />-->
+                                <Chronometer
                                     android:id="@+id/timeMap2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="00:00"
                                     android:textSize="20dp"
-                                    android:textColor="@color/black"
-                                    />
+                                    android:textColor="@color/black" />
 
                                 <TextView
                                     android:id="@+id/speedMap2"

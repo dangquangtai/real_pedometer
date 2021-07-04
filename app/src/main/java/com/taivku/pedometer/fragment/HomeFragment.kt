@@ -177,7 +177,8 @@ class HomeFragment : Fragment(), SensorEventListener {
                         var fbStep = oldPedometer1.numberSteps.toString()
                         var fbDistance = oldPedometer1.distance.toString()
                         var fbSpeed = oldPedometer1.speed.toString()
-                        var fbTime = chronometer.text.toString()
+//                        var fbTime = chronometer.text.toString()
+                        var fbTime = oldPedometer1.countTime.toString()
                         var fbCalo = oldPedometer1.caloriesBurned.toString()
                         var user: pedometer1 =
                             pedometer1(fbStep, fbDistance, fbSpeed, fbTime, fbCalo)

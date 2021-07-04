@@ -4,6 +4,7 @@ import android.content.ClipboardManager
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.os.Bundle
+import android.os.SystemClock
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
@@ -65,8 +66,8 @@ class RaceActivity : AppCompatActivity() {
                 )
                     .toString()
 
-
-                timeMap.text = pedometer1?.time.toString()
+                timeMap.setBase(SystemClock.elapsedRealtime() -  pedometer1?.time.toLong())
+//                timeMap.text = pedometer1?.time.toString()
                 speedMap.text =
                     BigDecimal(pedometer1?.speed!!.toDouble()).setScale(2, RoundingMode.HALF_EVEN)
                         .toString()
@@ -75,7 +76,7 @@ class RaceActivity : AppCompatActivity() {
                         .toString()
                 userValue = pedometer1?.distance.toDouble()
                 userCaloValue = pedometer1?.calo.toFloat()
-                Toast.makeText(applicationContext, userValue.toString(), Toast.LENGTH_SHORT).show()
+
                 if (pedometer1?.friend != "0") {
                     val prefsChom1 = applicationContext?.getSharedPreferences(
                         "prefsFriend",
@@ -84,9 +85,9 @@ class RaceActivity : AppCompatActivity() {
                     val editors = prefsChom1!!.edit()
                     editors.putString("friendId", pedometer1?.friend)
                     editors.apply()
-                    Toast.makeText(applicationContext, "Cos nayf", Toast.LENGTH_SHORT).show()
+
                 } else {
-                    Toast.makeText(applicationContext, "ko co nay", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "No friend matched !", Toast.LENGTH_SHORT).show()
                 }
 
             }
@@ -137,7 +138,7 @@ class RaceActivity : AppCompatActivity() {
 
 
                         } else {
-                            Toast.makeText(applicationContext, "ko", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(applicationContext, "Your friend may not online today !", Toast.LENGTH_SHORT).show()
                         }
 
 
@@ -193,7 +194,7 @@ class RaceActivity : AppCompatActivity() {
                     speedMap2.text = "00,00"
                     caloMap2.text = "00,00"
                     displayFriend.text = "There's no friend matched !"
-                    Toast.makeText(applicationContext, "ko", Toast.LENGTH_SHORT).show()
+
 
                 } else {
                     val myTopPostsQueryFriendrun =
@@ -214,7 +215,8 @@ class RaceActivity : AppCompatActivity() {
                                     RoundingMode.HALF_EVEN
                                 )
                                     .toString()
-                                timeMap2.text = pedometer?.time.toString()
+                                timeMap2.setBase(SystemClock.elapsedRealtime() - pedometer?.time.toLong())
+//                                timeMap2.text = pedometer?.time.toString()
                                 speedMap2.text = BigDecimal(pedometer?.speed!!.toDouble()).setScale(
                                     2,
                                     RoundingMode.HALF_EVEN
